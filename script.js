@@ -34,13 +34,18 @@ function showMain(e) {
 
 function handleNoClick() {
   const noButton = document.querySelector(".no-button");
-  const container = document.querySelector(".container");
+  const buttons = document.querySelector(".buttons");
 
-  const containerRect = container.getBoundingClientRect();
-  const buttonRect = noButton.getBoundingClientRect();
+  // change text
+  noButton.textContent = messages[messageIndex];
+  messageIndex = (messageIndex + 1) % messages.length;
 
-  const maxX = containerRect.width - buttonRect.width;
-  const maxY = containerRect.height - buttonRect.height;
+  // move inside buttons area
+  const area = buttons.getBoundingClientRect();
+  const btn = noButton.getBoundingClientRect();
+
+  const maxX = area.width - btn.width;
+  const maxY = area.height - btn.height;
 
   const x = Math.random() * maxX;
   const y = Math.random() * maxY;
