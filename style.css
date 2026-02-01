@@ -52,13 +52,9 @@ h1 {
   font-size: clamp(32px, 6vw, 44px);
 }
 
-
 .buttons {
   position: relative;
-}
-
-.buttons {
-  position: relative;
+  height: 140px;
   margin-top: 20px;
 }
 
