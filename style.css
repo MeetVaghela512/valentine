@@ -107,10 +107,6 @@ button {
     transform: translateY(0);
   }
 }
-.panda {
-  width: 140px;
-  margin-bottom: 10px;
-}
 .panda-peek {
   position: absolute;
   top: -65px;             /* peeking amount */
