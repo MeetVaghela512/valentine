@@ -15,6 +15,20 @@ function startMusic() {
     musicStarted = true;
   }
 }
+function showMain(e) {
+  e.stopPropagation();
+
+  const intro = document.getElementById("intro");
+  const main = document.getElementById("main");
+
+  intro.style.opacity = 0;
+
+  setTimeout(() => {
+    intro.style.display = "none";
+    main.style.display = "block";
+    main.style.animation = "fadeIn 0.6s ease";
+  }, 400);
+}
 
 function handleNoClick() {
   const noButton = document.querySelector(".no-button");
