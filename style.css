@@ -8,11 +8,17 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  background:
+    linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+    url("https://illustrations.popsy.co/pink/love.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .container {
   background: white;
