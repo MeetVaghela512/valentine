@@ -118,7 +118,8 @@ button {
 
   /* animation */
   animation: pandaBounce 2.5s ease-in-out infinite;
-  width: clamp(130px, 40vw, 160px);
+  width: clamp(180px, 65vw, 260px);
+
 }
 @keyframes pandaBounce {
   0%, 100% {
