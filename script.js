@@ -40,19 +40,21 @@ function handleNoClick() {
   noButton.textContent = messages[messageIndex];
   messageIndex = (messageIndex + 1) % messages.length;
 
-  // move inside buttons area
   const area = buttons.getBoundingClientRect();
   const btn = noButton.getBoundingClientRect();
 
+  const safeTop = 70; // 🔒 space reserved for YES button
+
   const maxX = area.width - btn.width;
-  const maxY = area.height - btn.height;
+  const maxY = area.height - btn.height - safeTop;
 
   const x = Math.random() * maxX;
-  const y = Math.random() * maxY;
+  const y = safeTop + Math.random() * maxY;
 
   noButton.style.left = `${x}px`;
   noButton.style.top = `${y}px`;
 }
+
 
 
 function handleYesClick(e) {
