@@ -37,12 +37,28 @@ function handleYesClick(e) {
       flex-direction:column;
       justify-content:center;
       align-items:center;
-      background:#ffdde1;
+      background:linear-gradient(135deg, #ffdde1, #ee9ca7);
       text-align:center;
-      font-family:Poppins;
+      padding:20px;
     ">
-      <h1 style="color:#ff4d6d;">Knew you would say YES! 💕</h1>
-      <p style="font-size:20px;">This music was played just for you 🎸</p>
+      <h1 style="
+        color:#ff4d6d;
+        font-family:'Dancing Script', cursive;
+        font-size:48px;
+        margin-bottom:15px;
+      ">
+        I knew you’d say YES 💕
+      </h1>
+
+      <p style="
+        font-family:'Poppins', sans-serif;
+        font-size:20px;
+        color:#333;
+        max-width:320px;
+      ">
+        This music playing right now…<br>
+        <strong>I played it specially for you 🎸</strong>
+      </p>
     </div>
   `;
 }
