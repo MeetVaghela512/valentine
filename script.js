@@ -44,6 +44,9 @@ function handleNoClick() {
 
 function handleYesClick(e) {
   e.stopPropagation();
+
+  startMusic(); // 🔥 force music to start here
+
   document.body.innerHTML = `
     <div style="
       height:100vh;
@@ -76,3 +79,4 @@ function handleYesClick(e) {
     </div>
   `;
 }
+
