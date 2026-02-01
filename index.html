@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Be My Valentine 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Music (starts after first click) -->
+  <audio id="bgMusic" src="music.mp3" loop></audio>
+
+  <div class="container" onclick="startMusic()">
+    <h1>Will you be my Valentine? 💘</h1>
+
+    <div class="buttons">
+      <button class="yes-button" onclick="handleYesClick(event)">Yes 💖</button>
+      <button class="no-button" onclick="handleNoClick(event)">No 🙄</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
