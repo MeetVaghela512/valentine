@@ -109,13 +109,18 @@ button {
 }
 .panda-peek {
   position: absolute;
-  top: -65px;             /* peeking amount */
+  top: -65px;
   left: 50%;
-  transform: translateX(-50%);
   width: 160px;
   z-index: 10;
-  animation: pandaBounce 2.5s ease-in-out infinite;
   pointer-events: none;
+
+  /* center */
+  transform: translateX(-50%);
+
+  /* animation */
+  animation: pandaBounce 2.5s ease-in-out infinite;
 }
+
 
 
