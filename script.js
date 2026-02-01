@@ -34,15 +34,21 @@ function showMain(e) {
 
 function handleNoClick() {
   const noButton = document.querySelector(".no-button");
+  const container = document.querySelector(".container");
 
-  noButton.textContent = messages[messageIndex];
-  messageIndex = (messageIndex + 1) % messages.length;
+  const containerRect = container.getBoundingClientRect();
+  const buttonRect = noButton.getBoundingClientRect();
 
-  const x = Math.random() * 200 - 100;
-  const y = Math.random() * 200 - 100;
+  const maxX = containerRect.width - buttonRect.width;
+  const maxY = containerRect.height - buttonRect.height;
 
-  noButton.style.transform = `translate(${x}px, ${y}px)`;
+  const x = Math.random() * maxX;
+  const y = Math.random() * maxY;
+
+  noButton.style.left = `${x}px`;
+  noButton.style.top = `${y}px`;
 }
+
 
 function handleYesClick(e) {
   e.stopPropagation();
