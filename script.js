@@ -18,6 +18,8 @@ function startMusic() {
 function showMain(e) {
   e.stopPropagation();
 
+  startMusic(); // 🎵 music starts AFTER shhh screen
+
   const intro = document.getElementById("intro");
   const main = document.getElementById("main");
 
