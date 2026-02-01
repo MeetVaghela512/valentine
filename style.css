@@ -17,6 +17,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 
@@ -61,8 +63,8 @@ h1 {
 }
 
 button {
-  padding: 14px 28px;
-  font-size: clamp(16px, 4.5vw, 18px);
+ padding: 18px 32px;
+  font-size: clamp(18px, 5vw, 20px);
   border-radius: 50px;
   margin: 12px;
 }
@@ -126,7 +128,7 @@ button {
     transform: translateX(-50%) translateY(0);
   }
   50% {
-    transform: translateX(-50%) translateY(6px);
+    transform: translateX(-50%) translateY(12px);
   }
 }
 
