@@ -110,6 +110,7 @@ button {
   position: absolute;
   top: -65px;
   left: 50%;
+  width: clamp(180px, 65vw, 260px);
   z-index: 10;
   pointer-events: none;
 
@@ -118,7 +119,7 @@ button {
 
   /* animation */
   animation: pandaBounce 2.5s ease-in-out infinite;
-  width: clamp(180px, 65vw, 260px);
+
 
 }
 @keyframes pandaBounce {
