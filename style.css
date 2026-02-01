@@ -54,7 +54,7 @@ h1 {
 
 .buttons {
   position: relative;
-  height: 140px;
+  height: 180px;
   margin-top: 20px;
 }
 
@@ -83,6 +83,7 @@ button {
   color: #444;
   position: absolute;
   left: 50%;
+  top: 70px;  
   transform: translateX(-50%);
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
