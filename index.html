@@ -11,14 +11,24 @@
   <!-- Music (starts after first click) -->
   <audio id="bgMusic" src="music.mp3" loop></audio>
 
-  <div class="container" onclick="startMusic()">
-    <h1>Will you be my Valentine? 💘</h1>
+ <div class="container" onclick="startMusic()">
 
+  <div id="intro">
+    <h1>Shhh… 🤫</h1>
+    <p>I made something for you, beautiful 💖</p>
+    <button class="yes-button" onclick="showMain(event)">Tap to see 👀</button>
+  </div>
+
+  <div id="main" style="display:none;">
+    <h1>Will you be my Valentine? 💘</h1>
     <div class="buttons">
       <button class="yes-button" onclick="handleYesClick(event)">Yes 💖</button>
       <button class="no-button" onclick="handleNoClick(event)">No 🙄</button>
     </div>
   </div>
+
+</div>
+
 
   <script src="script.js"></script>
 </body>
